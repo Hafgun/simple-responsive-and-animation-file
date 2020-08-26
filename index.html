@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Responsive Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">L-ogo</a>
+        </div>
+
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class= "menu-icon" >
+            <span class="menu-icon_line"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li class="nav-link">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+                <a href="#">About</a>
+            </li>
+            <li class="nav-link">
+                <a href="#">Portfolio</a>
+            </li>
+            <li class="nav-link">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+    </header>
+    <div class="hero">
+        <h1>Hero Text</h1>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium repellat fugit! Repudiandae ipsa mollitia molestias sequi dolores doloribus consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum optio architecto sed mollitia id deserunt officiis sit aperiam, ad, neque debitis recusandae facere quibusdam nobis fugiat impedit rerum ex eos, labore expedita! Libero, non assumenda nobis aut, animi blanditiis, aliquid suscipit asperiores nostrum perferendis dolorum at. Exercitationem, vitae eos!</p>
+    </div>
+
+
+    <script>
+        const header = document.querySelector(".main-header");
+
+        window.addEventListener("scroll", ()=>{
+            const scrollPos = window.scrollY;
+            if(scrollPos > 10){
+                header.classList.add("scrolled");
+            }
+            else{
+                header.classList.remove("scrolled");
+            }
+})
+    </script>
+</body>
+</html>

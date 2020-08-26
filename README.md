@@ -1,0 +1,3 @@
+#My RESPONSIVE AND ANIMATION STATIC SITEWEB
+
+It is a smooth siteweb 
